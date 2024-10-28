@@ -2,29 +2,28 @@ import os
 from dotenv import load_dotenv
 from langchain_groq import ChatGroq
 
-# Carregar variáveis de ambiente de um arquivo .env
+# Load environment variables from a .env file
 load_dotenv()
-# SITE PARA CONSEGUIR A KEY = https://console.groq.com/keys
-
-groq_api_key = "coloque_a_groq_api_key_aqui"
+groq_api_key = "insert_your_groq_api_key_here"
 os.environ["GROQ_API_KEY"] = groq_api_key
 
-# Inicializar o chatbot
+# Initialize the chatbot
 chat = ChatGroq(model="llama-3.1-70b-versatile")
 
-print("Chatbot interativo. Digite 'sair' para encerrar a conversa.")
+print("Interactive chatbot. Type 'exit' to end the conversation.")
 
 while True:
-    # Solicitar uma entrada do usuário
-    pergunta = input("Você: ")
+    # Prompt the user for input
+    question = input("You: ")
     
-    # Verificar se o usuário deseja sair
-    if pergunta.lower() == 'sair':
-        print("Encerrando o chat.")
+    # Check if the user wants to exit
+    if question.lower() == 'exit':
+        print("Ending the chat.")
         break
     
-    # Enviar a pergunta e obter resposta
-    resposta = chat.invoke(pergunta)
+    # Send the question and get the response
+    response = chat.invoke(question)
     
-    # Exibir a resposta do chatbot
-    print("Chatbot:", resposta)
+    # Display the chatbot's response
+    print("Chatbot:", response)
+
