@@ -1,0 +1,17 @@
+# Chatbot Interativo com Groq
+
+Este projeto implementa um chatbot interativo utilizando a API do Groq e o modelo Llama 3.1. O chatbot permite que os usuários façam perguntas e recebam respostas em tempo real.
+
+## Pré-requisitos
+
+Antes de executar o código, certifique-se de ter o seguinte instalado:
+
+- Python 3.x
+- Pacotes Python:
+  - `dotenv`
+  - `langchain_groq`
+
+Você pode instalar os pacotes necessários utilizando pip:
+
+```bash
+pip install python-dotenv langchain-groq
