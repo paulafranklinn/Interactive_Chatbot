@@ -6,8 +6,7 @@ Este projeto implementa um chatbot interativo utilizando a API do Groq e o model
 
 Antes de executar o código, certifique-se de ter o seguinte instalado:
 
-- Python 3.x
-- Pacotes Python:
+Pacotes Python:
   - `dotenv`
   - `langchain_groq`
 
